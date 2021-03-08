@@ -1,0 +1,70 @@
+﻿@inject SignInManager<ApplicationUser> SignInManager
+<div class="row border-bottom white-bg">
+    <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
+        <a asp-action="Index" asp-controller="Home" class="navbar-brand">Inspinia</a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-reorder"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav mr-auto">
+                @*<li class="active">
+                        <a aria-expanded="false" role="button" href="@Url.Action("Index", "Layouts")"> Back to main Layout page</a>
+                    </li>*@
+                @if (SignInManager.IsSignedIn(User))
+                { 
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Complaient</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a asp-action="complaients" asp-controller="Complaient" asp-area="User">Complaient's</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Category</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a asp-action="ListCategory" asp-controller="Complaient" asp-area="User">Category's</a></li>
+                    </ul>
+                </li>
+                }
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                {
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Manager</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a asp-action="ListRoles" asp-controller="Administration" asp-area="User">Role Manager</a></li>
+                        <li><a asp-action="Users" asp-controller="Administration" asp-area="User">Users</a></li>
+                    </ul>
+                </li>
+                }
+
+            </ul>
+            <ul class="nav navbar-top-links navbar-right">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li>
+                        <span>Welcome to - @User.Identity.Name</span>
+                    </li>
+
+                     <li class="dropdown">
+                        <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a asp-action="ChangePassword" asp-controller="ManagePassword" asp-area="User">Change Password</a></li>
+                            <li>
+                                <form method="post" asp-controller="Account" asp-action="Logout" asp-area="Comman">
+                                    <button type="submit" style="width:auto"
+                                            class="nav-link btn btn-link py-0 fa fa fa-sign-out">
+                                        Logout
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                 }
+                 else
+                 {
+                    <li><a asp-action="Register" asp-controller="Account" asp-area="Comman">Register</a></li>
+                    <li><a asp-action="Login" asp-controller="Account" asp-area="Comman">Login</a></li>
+                 }
+            </ul>
+        </div>
+    </nav>
+</div>

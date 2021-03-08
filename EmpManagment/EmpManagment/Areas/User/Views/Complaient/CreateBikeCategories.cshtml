@@ -1,0 +1,70 @@
+﻿@model BikeCategoriesViewModel
+@{
+    var projectName = Startup.StaticConfig["SolutionProjectName"];
+}
+<div class="AddUserForm">
+    <form asp-action="CreateBikeCategories" asp-controller="Complaient" asp-area="User" method="post" class="m-t" id="myForm">
+        <div class="form-group  row">
+            <div class="col-sm-12">
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
+        </div>
+
+        <div class="form-group  row">
+            <div class="col-sm-2"></div>
+            <label class="col-sm-2 col-form-label" asp-for="Name">Name</label>
+            <div class="col-sm-6">
+                <input type="text" id="txtName" asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6">
+                <span id="spanName" class="error">Please fill name.</span>
+            </div>
+        </div>
+        <div class="form-group  row">
+            <div class="col-sm-2"></div>
+            <label class="col-sm-2 col-form-label" asp-for="Description">Description</label>
+            <div class="col-sm-6">
+                <textarea asp-for="Description" id="txtDescription" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6">
+                <span id="spanDescription" class="error">Please fill description.</span>
+            </div>
+        </div>
+        <div class="form-group  row">
+            <div class="col-sm-2"></div>
+            <label class="col-sm-2 col-form-label" asp-for="Status">Status</label>
+            <div class="col-sm-6">
+                <select id="ddlStatus" asp-for="Status" class="form-control">
+                    <option value="">Select Status</option>
+                    <option value="true">Active</option>
+                    <option value="false">Not Active</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6">
+                <span id="spanStatus" class="error">Please select status.</span>
+            </div>
+        </div>
+
+        <div class="form-group  row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2">
+                <button type="submit" id="submit" class="btn btn-primary block  m-b">Create</button>
+            </div>
+        </div>
+    </form>
+</div>

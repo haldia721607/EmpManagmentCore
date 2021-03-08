@@ -1,0 +1,129 @@
+﻿@model EmpManagmentBOL.ViewModels.CommanAreaViewModels.RegisterViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-content">
+                    <div class="form-group  row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <h3>New User</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                        </div>
+                    </div>
+                    <form class="m-t" role="form" asp-area="Comman" asp-controller="Account" asp-action="Register" method="post">
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="Name">Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" asp-for="Name" class="form-control" placeholder="Name" required="">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="Email">Email</label>
+                            <div class="col-sm-6">
+                                <input type="email" asp-for="Email" class="form-control" placeholder="Email" required="">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="Password">Password</label>
+                            <div class="col-sm-6">
+                                <input type="password" asp-for="Password" class="form-control" placeholder="Password" required="">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="ConfirmPassword">Confirm Password</label>
+                            <div class="col-sm-6">
+                                <input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" required="">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="countryId">Country</label>
+                            <div class="col-sm-6">
+                                <select id="ddlcountry" asp-for="countryId" class="form-control" asp-items="@(new SelectList(Model.Countries,"Value","Text"))">
+                                    <option value="">Select Country</option>
+                                </select>
+                                <span asp-validation-for="countryId" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="stateId">State</label>
+                            <div class="col-sm-6">
+                                <select id="ddlstate" asp-for="stateId" class="form-control" asp-items="@(new SelectList(string.Empty, "Value", "Text","Value"))">
+                                    <option value="">Select State</option>
+                                </select>
+                                <span asp-validation-for="stateId" class="text-danger"></span>
+                                <span id="states-loading-progress" style="display: none;">Please wait..</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="cityId">City</label>
+                            <div class="col-sm-6">
+                                <select id="ddlcity" asp-for="cityId" class="form-control" asp-items="@(new SelectList(string.Empty, "Value", "Text","Value"))">
+                                    <option value="">Select City</option>
+                                </select>
+                                <span asp-validation-for="cityId" class="text-danger"></span>
+                                <span id="city-loading-progress" style="display: none;">Please wait..</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label class="col-sm-2 col-form-label" asp-for="TermsAndPolicy">Terms & Policy</label>
+                            <div class="col-sm-6">
+                                <div class="checkbox"><label> <input type="checkbox" asp-for="TermsAndPolicy"><i></i> Agree the terms and policy </label></div>
+                                <span asp-validation-for="TermsAndPolicy" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary block full-width m-b">Register</button>
+                            </div>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <div class="col-sm-2">
+                                    <a class="btn btn-primary block full-width m-b" href="@Url.Action("Users","Administration",new { Area = "User" })">Cancel</a>
+                                </div>
+                            }
+                        </div>
+                        @if (!SignInManager.IsSignedIn(User))
+                        {
+                            <div class="form-group row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2">
+                                    <p class="text-muted text-center"><small>Already have an account?</small></p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a class="btn btn-sm btn-white btn-block" href="@Url.Action("Login","Account",new { Area = "Comman" })">Login</a>
+                                </div>
+                            </div>
+                        }
+                    </form>
+                    <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <environment names="Development">
+        <script src="~/js/Custom.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/Custom.js"></script>
+    </environment>
+}

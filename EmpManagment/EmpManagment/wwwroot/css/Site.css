@@ -1,0 +1,19 @@
+﻿.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+.error {
+    color: #ed5565 !important;
+    font-weight:bold;
+    display: none;
+}
+.errorRadio {
+    color: #ed5565 !important;
+    font-weight: bold;
+    display: none;
+}

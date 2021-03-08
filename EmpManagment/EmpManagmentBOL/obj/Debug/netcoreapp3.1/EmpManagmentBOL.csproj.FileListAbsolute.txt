@@ -1,0 +1,17 @@
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.deps.json
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.dll
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.pdb
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.csprojAssemblyReference.cache
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.AssemblyInfoInputs.cache
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.AssemblyInfo.cs
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.csproj.CoreCompileInputs.cache
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.dll
+D:\Asp.NetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.pdb
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.deps.json
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.dll
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\bin\Debug\netcoreapp3.1\EmpManagmentBOL.pdb
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.AssemblyInfoInputs.cache
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.AssemblyInfo.cs
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.csproj.CoreCompileInputs.cache
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.dll
+D:\DotNetCoreProjects\EmpManagment\EmpManagmentBOL\obj\Debug\netcoreapp3.1\EmpManagmentBOL.pdb

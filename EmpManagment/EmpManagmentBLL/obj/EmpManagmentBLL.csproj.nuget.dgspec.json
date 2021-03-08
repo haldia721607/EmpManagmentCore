@@ -1,0 +1,278 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBLL\\EmpManagmentBLL.csproj": {}
+  },
+  "projects": {
+    "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBLL\\EmpManagmentBLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBLL\\EmpManagmentBLL.csproj",
+        "projectName": "EmpManagmentBLL",
+        "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBLL\\EmpManagmentBLL.csproj",
+        "packagesPath": "C:\\Users\\Ravi Shanker Pandey\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ravi Shanker Pandey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj": {
+                "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj"
+              },
+              "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\EmpManagmentDAL.csproj": {
+                "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\EmpManagmentDAL.csproj"
+              },
+              "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\EmpManagmentIBLL.csproj": {
+                "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\EmpManagmentIBLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj",
+        "projectName": "EmpManagmentBOL",
+        "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj",
+        "packagesPath": "C:\\Users\\Ravi Shanker Pandey\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ravi Shanker Pandey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\EmpManagmentDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\EmpManagmentDAL.csproj",
+        "projectName": "EmpManagmentDAL",
+        "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\EmpManagmentDAL.csproj",
+        "packagesPath": "C:\\Users\\Ravi Shanker Pandey\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentDAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ravi Shanker Pandey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj": {
+                "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\EmpManagmentIBLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\EmpManagmentIBLL.csproj",
+        "projectName": "EmpManagmentIBLL",
+        "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\EmpManagmentIBLL.csproj",
+        "packagesPath": "C:\\Users\\Ravi Shanker Pandey\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentIBLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ravi Shanker Pandey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj": {
+                "projectPath": "D:\\DotNetCoreProjects\\EmpManagment\\EmpManagmentBOL\\EmpManagmentBOL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
